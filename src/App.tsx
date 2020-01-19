@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   background-color: #363636;
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,11 +19,9 @@ const Title = styled.h1`
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <Container>
-        <Title>92THUNDER.DEV</Title>
-      </Container>
-    </div>
+    <Container>
+      <Title>92THUNDER.DEV</Title>
+    </Container>
   )
 }
 
