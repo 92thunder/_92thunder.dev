@@ -32,11 +32,11 @@ type IconWrapperProps = {
 
 export const IconWrapper: React.FC<IconWrapperProps> = (props) => {
   return !props.reverse ? (
-    <Border href={props.href} target="_blank" rel="noopenner">
+    <Border href={props.href}>
       {props.children}
     </Border>
   ) : (
-    <ReversedBorder href={props.href} target="_blank" rel="noopenner">
+    <ReversedBorder href={props.href}>
       {props.children}
     </ReversedBorder>
   )
